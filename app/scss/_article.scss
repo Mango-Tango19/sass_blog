@@ -1,0 +1,88 @@
+.article-image {
+
+    img {
+        width:  20em;
+
+        @include breakpoint-up(medium) {
+            width: 100%;
+            margin-top: 1.8rem;
+        }
+        
+    }
+}
+
+.article {
+    background-color: white;
+
+    .archive__description {
+        padding: 0;
+
+        p.bold-title {
+            font-size: 2.25rem;
+            line-height: 3.25rem;
+            font-weight: $bold;
+
+        }
+        
+
+    }
+
+    &__title {
+
+        p.bold-title {
+            font-weight: $bold;
+            font-size: 1.125rem;
+            line-height: 1.7rem;
+
+            @include breakpoint-up(medium) {
+            font-size: 2.25rem;
+            line-height: 3.25rem;
+            }
+
+        }
+
+        p {
+            font-weight:$thin;
+            font-size: 0.9rem;
+            line-height: 1.5rem;
+            padding-bottom: 0.5rem;
+
+            @include breakpoint-up(medium) {
+                font-size: 1.25rem;
+            line-height: 2.25rem;
+
+            }
+
+            a {
+                color: $pink;
+            }
+
+        }
+
+        p.pink-box {
+            padding: 1rem;
+            margin: 1rem 0;
+            border: solid 1px #F4E1E1;
+            background-color: #FFF9F9;
+        }
+    }
+    &__image {
+        width: 18rem;
+        @include breakpoint-up(medium) {
+            width: 100%;
+        }
+    }
+
+    &__caption {
+        font-size: 0.6rem;
+        color: $light-grey-font;
+        line-height: 1.25rem;
+        padding-bottom: 1rem;
+    }
+
+    &__social-links {
+        a {
+            padding-right: 0.6rem;
+        }
+    }
+}

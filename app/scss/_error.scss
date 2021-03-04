@@ -1,0 +1,45 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+
+    &__image {
+        margin-bottom: 2rem;
+
+        img {
+            width: 7.8rem;
+            height: 4.8rem;
+
+            @include breakpoint-up(medium) {
+                width: 16rem;
+                height: 11rem;
+            }
+        }
+    }
+
+    &__title {
+        font-weight: $bold;
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+        margin-bottom: 1rem;
+    }
+
+    &__sub-title {
+        font-weight: $thin;
+       text-align: center;
+    }
+
+    .search-panel {
+        display: block;
+        width: 100%;
+
+
+        @include breakpoint-up(medium) {
+            width: 51.8rem;
+        }
+
+       
+
+        
+}
+}

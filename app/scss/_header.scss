@@ -1,0 +1,76 @@
+.header {
+    background-color: $dark-grey-bg;
+
+    nav {
+        padding: 20px 0;
+    }
+
+    &__menu {
+        //mobile menu on header
+        position: relative;
+
+        > span {
+            display: block;
+            width: 18px;
+            height: 3px;
+            background-color: $pink;
+            border-radius: 2px;
+            transition: all 0.25s;
+            position: relative;
+        }
+
+        .one {
+            bottom: 5px;
+        }
+        .one-ani {
+            transform: rotate(35deg);
+            transition: all 0.25s;
+        }
+        .two-ani {
+            transform: rotate(-35deg);
+            transition: all 0.25s;
+            bottom: 8px;
+        }
+    }
+
+    &__links {
+        width: 55%;
+
+        a {
+            text-transform: uppercase;
+            color: white;
+            font-weight: $bold;
+            transition: color 200ms ease-in-out;
+
+            &:not(:last-child) {
+                margin-right: 1em;
+
+            }
+
+
+            img {
+                margin-right: 0.3em;
+            }
+
+            &:hover {
+                color: $light-pink;
+            }
+        }
+
+        
+    }
+
+    &__logo {
+        img {
+            width: 10em;
+            height: 1.8em;
+        }
+    }
+
+    // &__search {
+    // }
+}
+
+.show {
+    display: block;
+}

@@ -1,0 +1,65 @@
+.archive {
+    @include breakpoint-up(medium) {
+        display: flex;
+        flex-direction: column;
+    }
+   
+
+    &__card {
+        display: flex;
+        background-color: white;
+        border-radius: 5px;
+        margin-bottom: 2em;
+
+    }
+
+    
+    &__image {
+            height: 12.5em;
+            width: 15.6em;  
+        }
+        
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5em 1.8em;
+
+    }
+
+    &__header {
+        display: flex;
+        align-items: baseline;
+        
+
+        > p {
+            text-transform: uppercase;
+            color: $pink;
+            font-weight: $bold;
+            letter-spacing: 2px;
+            margin-right: 1.6em;
+        }
+
+
+    }
+
+    &__title {
+
+        p {
+            font-size: 1.25rem;
+            line-height: 1.85rem;
+            letter-spacing: 2%;
+            font-weight: $regular;
+
+        }
+
+    }
+
+    &__subtitle {
+        
+        p {
+            padding: 0.5em 0;
+        }
+
+    }
+}

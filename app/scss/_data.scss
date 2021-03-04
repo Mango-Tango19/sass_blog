@@ -1,0 +1,26 @@
+.data {
+
+    p {
+        margin: 1.4em 2.1em;
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+        font-weight: $bold;
+
+        @include breakpoint-up(medium) {
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+        }
+    }
+
+    .line {
+        display: inline-block;
+        width: 3em;
+        height: 0;
+        border: 1px solid $light-grey-font;
+
+        @include breakpoint-up(medium) {
+            width: 35%;
+        }
+        
+      }
+}

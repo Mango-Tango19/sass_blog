@@ -1,0 +1,47 @@
+.menu-panel-mobile {
+    display: none;
+    width: 100%;
+    overflow: hidden;
+
+    ul {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        background-color: $light-grey-menu;
+        max-width: 100%;
+        overflow-x: auto;
+        display: inline-block;
+        white-space: nowrap;
+
+        li {
+            
+            display: inline-block;
+            white-space: nowrap;
+            transition: color 300ms ease-in-out;
+
+            &:hover {
+                background-color: $light-pink;
+                border-radius: 5px;
+            }
+           
+        }
+
+        a {
+            text-transform: uppercase;
+            color: $dark-grey-bg;
+            font-size: 1rem;
+            line-height: 1.1rem;
+            font-weight: $bold;
+            display: block;
+            padding: 1rem;
+
+            
+        }
+     
+    }
+}
+
+.show {
+    display: block;
+}

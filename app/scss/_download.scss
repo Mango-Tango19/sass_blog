@@ -1,0 +1,31 @@
+.download {
+
+    margin-bottom: 1em;
+
+    &__solid {
+        width: 100%;
+    display: flex;
+    background-color: $dark-grey-bg;
+    height: 3.5em;
+    border-radius: 5px;
+
+    .download_image {
+        margin-right: 0.8rem;
+    }
+
+    .download_text p {
+        text-transform: uppercase;
+        color: white;
+        font-size: 0.75rem;
+        line-height: 0.8rem;
+        font-weight: $bold;
+
+        @include breakpoint-up(medium) {
+             font-size: 1rem;
+            line-height: 1.2rem;
+        }
+    }
+
+    }
+    
+}

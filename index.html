@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./app/css/styles.css">
+    <title>Sakartvelo</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="flex flex-jc-sb flex-ai-c main-wrapper__desktop main-wrapper__mobile">
+            <a href="#" class="header__menu hide-for-desktop">
+                <span class="one"></span>
+                <span class="two"></span>
+            </a>
+            <a href="/" class="header__logo">
+                <img src="./images/navBar/Sakartvelo.svg" alt="">
+            </a>
+
+            <a href="/" class="header__search hide-for-desktop">
+                 <img class="header__search-image" src="./images/navBar/search.svg" alt="">
+            </a>
+
+            <div class="header__links flex flex-jc-sb hide-for-mobile">
+                <a href="#">english</a>
+                <a href="#">usd 3.15</a>
+                <a href="#">eur 3.75</a>
+                <a class="search-desktop" href="#">
+                 <img class="search-desktop-image" src="./images/navBar/search.svg" alt=""> 
+                    поиск</a>
+                <a class="menu-desktop" href="#">
+                    <img class="menu-desktop-image" src="./images/navBar/menu.svg" alt="">
+                    меню</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- mobile menu -->
+    <div class="menu-panel-mobile"> 
+        <ul>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">места</a></li>
+            <li><a href="#">события</a></li>
+            <li><a href="#">истории</a></li>
+            <li><a href="#">en</a></li>
+            <li><a href="#">usd 3.15</a></li>
+            <li><a href="#">eur 3.75</a></li>
+        </ul>
+    </div>
+
+    <!-- desktop menu  -->
+    <div class="menu-panel-desktop main-wrapper__desktop"> 
+        <ul class="flex flex-jc-c">
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">места</a></li>
+            <li><a href="#">события</a></li>
+            <li><a href="#">истории</a></li>
+        </ul>
+    </div>
+
+    <!-- search panel -->
+
+    <div class="search-panel main-wrapper__desktop main-wrapper__mobile">
+        <form class="search-panel__container">
+            <input type="text" class="search-panel__bar" placeholder="введите запрос">
+            <a href="#"><img class="search-panel__icon" src="./images/icons/enter.svg" alt=""></a>
+        </form>
+        
+    </div>
+
+    <section class="news main-wrapper__desktop main-wrapper__mobile">
+        <div class="news__card flex">
+            <div class="news__image">
+                <img src="./images/posts_img/post1.png" alt="">
+            </div>
+            <div class="news__title">
+                <p> Грузия Сегодня: Поправки в Трудовой кодекс Грузии утверждены. Что изменится в условиях труда?</p>
+                <div class="news__views">
+                    <p>1 октября 2020</p>
+                    <img src="./images/icons/eye.png" alt="">
+                    <p>7829</p>
+                </div>
+            </div>
+        </div>
+        <div class="news__list flex">
+            <div class="block__header">
+                <div class="block__header__image">
+                    <img src="./images/icons/news.png" alt="">
+                </div>
+                <div class="block__header__title">
+                    <p>Новости</p>
+                </div>
+            </div>
+            <div class="news_list__item">
+                <div class="news_list__item__title">
+                    <p> Грузия Сегодня: Поправки в Трудовой кодекс Грузии утверждены. Что изменится в условиях труда?
+                    </p>
+                    <div class="news__views">
+                        <p>1 октября 2020</p>
+                        <img src="./images/icons/eye.png" alt="">
+                        <p>7829</p>
+                    </div>
+                </div>
+            </div>
+            <div class="news_list__item">
+                <div class="news_list__item__title">
+                    <p> Ветеринары попросили не подкармливать известного в Грузии пса
+                    </p>
+                    <div class="news__views">
+                        <p>1 октября 2020</p>
+                        <img src="./images/icons/eye.png" alt="">
+                        <p>7829</p>
+                    </div>
+                </div>
+            </div>
+            <div class="news_list__item">
+                <div class="news_list__item__title">
+                    <p>Армяне в Грузии перекрыли дорогу для машин из Турции
+                    </p>
+                    <div class="news__views">
+                        <p>1 октября 2020</p>
+                        <img src="./images/icons/eye.png" alt="">
+                        <p>7829</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="slider main-wrapper__desktop main-wrapper__mobile">
+        <div class="block__header">
+            <div class="block__header__image">
+                <img src="./images/icons/calendar.png" alt="">
+            </div>
+            <div class="block__header__title">
+                <p>События Грузии</p>
+            </div>
+
+            <a href="#" class="control prev disable hide-for-mobile">
+                <img src="./images/icons/arrow.png" alt="">
+            </a>
+            <a href="#" class="control next hide-for-mobile">
+                <img src="./images/icons/arrow.png" alt="">
+            </a>
+        </div>
+        
+
+        <div class="slider__outer">
+            <a href="#" class="control prev disable">
+                <img class="hide-for-desktop" src="./images/icons/arrow.png" alt="">
+            </a>
+            <a href="#" class="control next">
+                <img class="hide-for-desktop" src="./images/icons/arrow.png" alt="">
+            </a>
+            <div class="slider__inner">
+                <a href="#" class="slide">
+                    <img src="./images/slides/slide1.png" alt="">
+                    <div class="news_list__item__title">
+                      <p>Выставка Гурама Доленджашвили открылась в Тбилиси
+                      </p>
+                      <div class="news__views">
+                          <p>1 октября 2020</p>
+                          <img src="./images/icons/eye.png" alt="">
+                          <p>7829</p>
+                      </div>
+                  </div>
+
+                </a>
+                <a href="#" class="slide">
+                    <img src="./images/slides/slide2.png" alt="">
+                    <div class="news_list__item__title">
+                      <p>Фестиваль Jazz and Wine пройдет в Кахетии 3 октября
+                      </p>
+                      <div class="news__views">
+                          <p>1 октября 2020</p>
+                          <img src="./images/icons/eye.png" alt="">
+                          <p>7829</p>
+                      </div>
+                  </div>
+
+                </a>
+                <a href="#" class="slide">
+                    <img src="./images/slides/slide3.png" alt="">
+                    <div class="news_list__item__title">
+                      <p>В столице Грузии открывается Tbilisi Photo Festival 2020
+                      </p>
+                      <div class="news__views">
+                          <p>1 октября 2020</p>
+                          <img src="./images/icons/eye.png" alt="">
+                          <p>7829</p>
+                      </div>
+                  </div>
+
+                </a>
+                <a href="#" class="slide">
+                    <img src="./images/slides/slide4.png" alt="">
+                    <div class="news_list__item__title">
+                      <p>Ансамбль «Сухишвили» проведет цикл концертов
+                      </p>
+                      <div class="news__views">
+                          <p>1 октября 2020</p>
+                          <img src="./images/icons/eye.png" alt="">
+                          <p>7829</p>
+                      </div>
+                  </div>
+
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="card-desk main-wrapper__desktop main-wrapper__mobile">
+        <div class="news__card flex">
+            <div class="news__image">
+                <img src="./images/cards/card7.png" alt="">
+            </div>
+            <div class="news__title">
+                <p> Бурджанадзе оценила перспективы вступления Грузии в НАТО</p>
+                <div class="news__views">
+                    <p>1 октября 2020</p>
+                    <img src="./images/icons/eye.png" alt="">
+                    <p>7829</p>
+                </div>
+            </div>
+        </div>
+        <div class="news__card flex">
+            <div class="news__image">
+                <img src="./images/cards/card2.png" alt="">
+            </div>
+            <div class="news__title">
+                <p> Грузия изменила правила въезда в страну</p>
+                <div class="news__views">
+                    <p>1 октября 2020</p>
+                    <img src="./images/icons/eye.png" alt="">
+                    <p>7829</p>
+                </div>
+            </div>
+        </div>
+        <div class="news__card flex">
+            <div class="news__image">
+                <img src="./images/cards/card5.png" alt="">
+            </div>
+            <div class="news__title">
+                <p> Премьер Грузии заявил о начале второй волны коронавируса в стране</p>
+                <div class="news__views">
+                    <p>1 октября 2020</p>
+                    <img src="./images/icons/eye.png" alt="">
+                    <p>7829</p>
+                </div>
+            </div>
+        </div>
+        <div class="news__card flex">
+            <div class="news__image">
+                <img src="./images/cards/card6.png" alt="">
+            </div>
+            <div class="news__title">
+                <p> Вашингтон нанял социологов из Грузии для измерения протестов</p>
+                <div class="news__views">
+                    <p>1 октября 2020</p>
+                    <img src="./images/icons/eye.png" alt="">
+                    <p>7829</p>
+                </div>
+            </div>
+        </div>
+        <div class="news__card flex">
+            <div class="news__image">
+                <img src="./images/cards/card1.png" alt="">
+            </div>
+            <div class="news__title">
+                <p> Саакашвили лишат звания почетного доктора университета</p>
+                <div class="news__views">
+                    <p>1 октября 2020</p>
+                    <img src="./images/icons/eye.png" alt="">
+                    <p>7829</p>
+                </div>
+            </div>
+        </div>
+        <div class="news__card flex">
+            <div class="news__image">
+                <img src="./images/cards/card3.png" alt="">
+            </div>
+            <div class="news__title">
+                <p> Грузия подписала соглашение с Израилем о трудоустройстве</p>
+                <div class="news__views">
+                    <p>1 октября 2020</p>
+                    <img src="./images/icons/eye.png" alt="">
+                    <p>7829</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider main-wrapper__desktop main-wrapper__mobile">
+        <div class="block__header">
+            <div class="block__header__image">
+                <img src="./images/icons/location.png" alt="">
+            </div>
+            <div class="block__header__title">
+                <p>Места Грузии</p>
+            </div>
+
+            <a href="#" class="control prev disable hide-for-mobile">
+                <img src="./images/icons/arrow.png" alt="">
+            </a>
+            <a href="#" class="control next hide-for-mobile">
+                <img src="./images/icons/arrow.png" alt="">
+            </a>
+        </div>
+        
+
+        <div class="slider__outer">
+            <a href="#" class="control prev disable">
+                <img class="hide-for-desktop" src="./images/icons/arrow.png" alt="">
+            </a>
+            <a href="#" class="control next">
+                <img class="hide-for-desktop" src="./images/icons/arrow.png" alt="">
+            </a>
+            <div class="slider__inner">
+                <a href="#" class="slide">
+                    <img src="./images/slides/slide1.png" alt="">
+                    <div class="news_list__item__title">
+                      <p>Выставка Гурама Доленджашвили открылась в Тбилиси
+                      </p>
+                      <div class="news__views">
+                          <p>1 октября 2020</p>
+                          <img src="./images/icons/eye.png" alt="">
+                          <p>7829</p>
+                      </div>
+                  </div>
+
+                </a>
+                <a href="#" class="slide">
+                    <img src="./images/slides/slide2.png" alt="">
+                    <div class="news_list__item__title">
+                      <p>Фестиваль Jazz and Wine пройдет в Кахетии 3 октября
+                      </p>
+                      <div class="news__views">
+                          <p>1 октября 2020</p>
+                          <img src="./images/icons/eye.png" alt="">
+                          <p>7829</p>
+                      </div>
+                  </div>
+
+                </a>
+                <a href="#" class="slide">
+                    <img src="./images/slides/slide3.png" alt="">
+                    <div class="news_list__item__title">
+                      <p>В столице Грузии открывается Tbilisi Photo Festival 2020
+                      </p>
+                      <div class="news__views">
+                          <p>1 октября 2020</p>
+                          <img src="./images/icons/eye.png" alt="">
+                          <p>7829</p>
+                      </div>
+                  </div>
+
+                </a>
+                <a href="#" class="slide">
+                    <img src="./images/slides/slide4.png" alt="">
+                    <div class="news_list__item__title">
+                      <p>Ансамбль «Сухишвили» проведет цикл концертов
+                      </p>
+                      <div class="news__views">
+                          <p>1 октября 2020</p>
+                          <img src="./images/icons/eye.png" alt="">
+                          <p>7829</p>
+                      </div>
+                  </div>
+
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="card-desk main-wrapper__desktop main-wrapper__mobile">
+        <div class="news__card flex">
+            <div class="news__image">
+                <img src="./images/cards/card6.png" alt="">
+            </div>
+            <div class="news__title">
+                <p> Вашингтон нанял социологов из Грузии для измерения протестов</p>
+                <div class="news__views">
+                    <p>1 октября 2020</p>
+                    <img src="./images/icons/eye.png" alt="">
+                    <p>7829</p>
+                </div>
+            </div>
+        </div>
+        <div class="news__card flex">
+            <div class="news__image">
+                <img src="./images/cards/card1.png" alt="">
+            </div>
+            <div class="news__title">
+                <p> Саакашвили лишат звания почетного доктора университета</p>
+                <div class="news__views">
+                    <p>1 октября 2020</p>
+                    <img src="./images/icons/eye.png" alt="">
+                    <p>7829</p>
+                </div>
+            </div>
+        </div>
+        <div class="news__card flex">
+            <div class="news__image">
+                <img src="./images/cards/card3.png" alt="">
+            </div>
+            <div class="news__title">
+                <p> Грузия подписала соглашение с Израилем о трудоустройстве</p>
+                <div class="news__views">
+                    <p>1 октября 2020</p>
+                    <img src="./images/icons/eye.png" alt="">
+                    <p>7829</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="download card-desk main-wrapper__desktop main-wrapper__mobile">
+    <div class="download__solid flex flex-jc-c flex-ai-c">
+<div class="download_image">
+    <img src="./images/icons/loading.png" alt="">
+</div>
+<div class="download_text">
+    <p>загрузить ещё</p>
+</div>
+    </div>
+    </section>
+
+    <footer class="footer flex flex-jc-sb flex-ai-c">
+        
+        <div class="footer__logo">
+            <img src="./images/footer/logo_foot.png" alt="">
+        </div>
+
+        <div class="footer__links flex flex-jc-sb flex-ai-c">
+            <a href="#">Новости</a>
+            <a href="#">места</a>
+            <a href="#">события</a>
+            <a href="#">истории</a>
+        </div>
+        <div class="footer__about  flex flex-jc-sb flex-ai-c">
+            <div class="row row-1">
+                <a href="#">О проекте</a>
+            <a href="#">Вакансии</a>
+            </div>
+            <div class="row row-2">
+                <a href="#">
+                    <img src="./images/footer/logo_insta.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="./images/footer/logo_tg.png" alt="">
+                </a>
+                <a href="#">info@sakartvelo.io</a>
+
+            </div>
+        </div>
+
+        <div class="footer__title">
+            <p>Новости Грузии. Люди, места, события. Использование материалов Sakartvelo разрешено только с предварительного согласия правообладателей. Все права на картинки и тексты в разделе Новости принадлежат их авторам.</p>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="./app/js/script.js"></script>
+</body>
+
+</html>

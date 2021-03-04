@@ -1,0 +1,64 @@
+.card-desk {
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    @include breakpoint-down(medium) {
+       flex-direction: column;
+    }
+
+    & > :nth-child(n + 4) {
+        @include breakpoint-down(medium) {
+            display: none;
+        }
+    }
+
+    & > :not(:last-child) {
+        @include breakpoint-down(medium) {
+            margin-bottom: 1.5rem;
+         }
+        
+    }
+
+    & > .news__card {
+
+        width: 21.8em;
+        border-radius: 5px;
+
+        @include breakpoint-down(medium) {
+            width: 18em;
+         }
+
+        & > .news__image img {
+            width: inherit;
+            height: inherit;
+
+            @include breakpoint-down(medium) {
+                width: 18em;
+             }
+        }
+
+        &:nth-child(-n+3) {
+            margin-bottom: 1.2em;
+        }
+
+        & > .news__title > p {
+            font-size: 1.25rem;
+            line-height: 1.85rem;
+
+            @include breakpoint-down(medium) {
+                font-size: 1rem;
+                line-height: 1.5rem;
+             }
+
+             .news__views p {
+                font-size: 0.8rem;
+                line-height: 1.3rem;
+            }
+        }
+
+      
+    }
+
+}

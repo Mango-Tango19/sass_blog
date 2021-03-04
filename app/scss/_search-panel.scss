@@ -1,0 +1,57 @@
+.search-panel {
+  display: none;
+  margin-top: 1rem;
+
+    &__container {
+        width: 100%;
+        display: block;
+        margin: 0.5rem auto;
+        overflow: hidden;
+
+        input {
+            width: 100%;
+            height: 2.43rem;
+            padding: 0.75rem 0;
+            border: none;
+            border-radius: 5px;
+
+            &::placeholder {
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 1rem;
+                letter-spacing: 1px;
+                color: $light-grey-font;
+            }
+
+            &:focus{
+                border: 1px solid $pink;
+                transition: 0.35s ease;
+                color: $pink;
+
+                &::-webkit-input-placeholder{
+                    transition: opacity 0.45s ease; 
+                      opacity: 0;
+                   }
+                  &::-moz-placeholder {
+                    transition: opacity 0.45s ease; 
+                      opacity: 0;
+                   }
+                  &:-ms-placeholder {
+                   transition: opacity 0.45s ease; 
+                     opacity: 0;
+                   } 
+            }
+        }
+    }
+
+    &__icon {
+    position: relative;
+    float: right;
+    bottom: 1.5rem;
+    left: -1rem;
+    height: 1rem;
+    
+    }
+    
+
+}
