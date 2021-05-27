@@ -1,9 +1,6 @@
 
-### Задача
 
 ## Вёрстка блога по макету Figma
-
-сайт можно увидеть [здесь](https://mango-tango19.github.io/sass_blog/)
 
 # Десктопная версия
 
@@ -19,3 +16,5 @@
 #### Глобальные стили [SASS](https://sass-lang.com/)
 
 В файлах с расширением `.scss` использованы `@mixin` и `variables`.
+
+сайт можно увидеть [здесь](https://mango-tango19.github.io/sass_blog/)
